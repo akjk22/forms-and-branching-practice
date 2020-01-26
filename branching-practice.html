@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesbranching.css">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="js/scriptbranching.js"></script>
+    <title>Celebrity Dating Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter Information: <br>See Which Celebrity You Match With.</h1>
+      <form id="celebrity" class="form-horizontal">
+        <label for="age">Age</label>
+        <input class="form-control .has-error" id="age" type="text">
+        <!-- <span class="help-block">Please fill this out.</span> -->
+        <br>
+        <label for="hobby">Favorite Hobby</label>
+        <select class="form-control" id="hobby">
+          <option value="cooking">Cooking</option>
+          <option value="sports">Sports</option>
+          <option value="music">Playing Music</option>
+        </select>
+        <!-- <span class="help-block">Please fill this out.</span> -->
+        <br>
+        <label for="movie">Select a Movie</label>
+        <div class="radio" id="movie">
+            <label>
+              <input type="radio" name="movie1" value="Chef">
+              Chef
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie1" value="Space Jam">
+              Space Jam
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie1" value="Bohemian Rapsody">
+              Bohemian Rapsody
+            </label>
+          </div>
+      </form>
+      <br>
+      <br>
+      <button>Submit</button>
+      <div id="rachel">
+          <p><strong>You are most compatible with: Rachel Ray</strong></p>
+            <img src="img/rachel.jpeg" alt="Rachel Ray" >
+        </div>
+        <div id="jordan">
+            <p><strong>You are most compatible with: The GOAT</strong></p>
+              <img src="img/jordan.jpg" alt="Michael Jordan" >
+          </div>
+      <div id="bieber">
+        <p><strong>You are most compatible with: Justin Bieber</strong></p>
+          <img src="img/bieber.jpg" alt="Justin Bieber" >
+      </div>
+    </div>
+  </body>
+</html>

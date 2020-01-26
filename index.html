@@ -14,14 +14,26 @@
 </head>
 <body>
     <h1>Survey!</h1>
-    <label for="q1">What is your favorite theme park?</label><input id="q1" placeholder="Please answer this question" type="text"></input>
-    <br>
-    <label for="q1">What is your favorite color?</label><input id="q2" placeholder="Please answer this question" type="color"></input>
-    <br>
-    <label for="q1">What is your favorite date?</label><input id="q3" placeholder="Please answer this question" type="date"></input>
-    <br>
-    <label for="q1">What is your phone number?</label><input id="q4" placeholder="Please answer this question" type="tel"></input>
-    <br>
-    <label for="q1">What is your age?</label><input id="q5" placeholder="Please answer this question" type="number"></input>
+    <div>
+        <form>
+            <label for="q1">What is your favorite theme park?</label><input class="form-control" id="q1" placeholder="Please answer this question" type="text"></input>
+            <br>
+            <label for="q2">What is your favorite color?</label><input class="form-control" id="q2" placeholder="Please answer this question" type="color"></input>
+            <br>
+            <label for="q3">What is your favorite date?</label><input class="form-control" id="q3" placeholder="Please answer this question" type="date"></input>
+            <br>
+            <label for="q4">What is your phone number?</label><input class="form-control" id="q4" placeholder="Please answer this question" type="tel"></input>
+            <br>
+            <label for="q5">What is your age?</label><input class="form-control" id="q5" placeholder="Please answer this question" type="number"></input>
+            <br>
+            <label for="q6">Select your favorite pet</label>
+            <select id="q6" class="form-control">
+                <option value="1">Dog</option>
+                <option value="2">Cat</option>
+                <option value="3">Turtle</option>
+                <option value="4">Fish</option>
+            </select>
+        </form>
+    </div>    
 </body>
 </html>
