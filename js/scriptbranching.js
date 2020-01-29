@@ -1,27 +1,24 @@
 $(document).ready(function() {
-    $("#celebrity").submit(function(event) {
+    $("#celebrity").submit(function() {
       var age = parseInt($("#age").val());
       var hobby = $("#hobby").val();
-      var movie = $("#movie").val();
-      alert('this is working');
+      var movie = $("input:radio[name=movie1]:checked").val();
+      console.log(age);
+      console.log(hobby);
+      console.log(movie);
 
-      if (age > 35 && hobby === 'Cooking' && movie === 'Chef') {
+      if (age > 35 && hobby === "cooking" && movie === "Chef") {
         alert('this is working');
-      }   
-    
-      // $("#rachel").show();
 
-      // } else { age > 40 && value === 'sports' && value === 'Space Jam') {
-      //   alert('this is working');
-      // }  
+        $("#rachel").show();
 
-      // } $("#jordan").show();
-
-      // else if (age < 30 && value === 'music' && value === 'Bohemian Rapsody') {
-      //   alert('this is working');
-      // } 
-      
-      // $("#bieber").show();
+      } 
+      else if (age < 35 && hobby === "music" && movie === "Bohemian Rapsody") {
+        $("#bieber").show();
+      }  
+      else {
+        $("#jordan").show();
+      } 
 
       event.preventDefault();
     });
